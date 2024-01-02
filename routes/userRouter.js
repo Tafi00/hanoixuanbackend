@@ -6,7 +6,7 @@ const { getAuth } = require("firebase-admin/auth");
 
 const router = express.Router();
 router.get("/checkRegistration", async (req, res) => {
-  const phone = req.query.phone; 
+  const phone = req.query.phone;
 
   if (!phone) {
     return res.status(400).json({ error: "Phone number is required" });
@@ -34,7 +34,7 @@ router.post("/register", (req, res) => {
     .verifyIdToken(idToken)
     .then(async (decodedToken) => {
       const uid = decodedToken.uid;
-      const phone = decodedToken.phone_number.replace("+84","0");
+      const phone = decodedToken.phone_number.replace("+84", "0");
       try {
         const user = await User.findOne({ phone: phone });
         if (!user) {
@@ -63,17 +63,18 @@ router.get("/getProfile", verifyToken, async (req, res) => {
     const user = await User.findOne({ uid: uid });
     if (!user) {
       return res.status(404).json({ error: "User not found" });
-    }
-    else{
-      return res
-      .status(200)
-      .json({ name: user.name, phone: user.phone, uid: user.uid ,score:user.score,playCount:user.playCount});
+    } else {
+      return res.status(200).json({
+        name: user.name,
+        phone: user.phone,
+        uid: user.uid,
+        score: user.hathanh_score,
+        playCount: user.playCount,
+      });
     }
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
-    
   }
-  
 });
 
 module.exports = router;
