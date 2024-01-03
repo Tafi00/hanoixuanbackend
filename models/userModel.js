@@ -25,6 +25,10 @@ const userSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  isLike: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const User = mongoose.model("User", userSchema);
@@ -34,7 +38,7 @@ cron.schedule("0 0 * * *", async () => {
     // Reset playCount về 3 chỉ cho những người dùng có playCount < 3
     await User.updateMany(
       { playCount: { $lt: 3 } },
-      { $set: { playCount: 3 } }
+      { $set: { playCount: 3, isLike: false, isShare: false } }
     );
     console.log("playCount reset successful.");
   } catch (error) {

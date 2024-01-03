@@ -227,9 +227,22 @@ router.get("/shareMission", verifyToken, async (req, res) => {
   const currentUser = await User.findOne({ uid: req.user.uid });
   if (!currentUser.isShare) {
     await currentUser.updateOne({ $inc: { playCount: 1 } });
-    await currentUser.updateOne({ isShare:true });
+    await currentUser.updateOne({ isShare: true });
     return res.status(200).json({
       message: "Bạn đã được thêm một lượt chơi từ nhiệm vụ share trên facebook",
+    });
+  }
+  return res.status(200).json({
+    message: "Bạn đã nhận thưởng từ nhiệm vụ này rồi",
+  });
+});
+router.get("/likeMission", verifyToken, async (req, res) => {
+  const currentUser = await User.findOne({ uid: req.user.uid });
+  if (!currentUser.isShare) {
+    await currentUser.updateOne({ $inc: { playCount: 1 } });
+    await currentUser.updateOne({ isLike: true });
+    return res.status(200).json({
+      message: "Bạn đã được thêm một lượt chơi từ nhiệm vụ like trên facebook",
     });
   }
   return res.status(200).json({
