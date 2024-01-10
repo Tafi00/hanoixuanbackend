@@ -1,258 +1,258 @@
 [
   {
-    "question": "Món xôi 5 màu của dân tộc Tày, Nùng có tên là gì?",
-    "answer": ["Xôi gấc", "Xôi ngũ sắc", "Xôi vò"],
-    "selected": "Xôi ngũ sắc"
-  },
-  {
-    "question": "Đâu là nét đẹp ngày Xuân của vùng Đông Bắc?",
+    "question": "Mâm ngũ quả của người miền Nam gồm những loại quả nào?",
     "answer": [
-      "Chợ hoa “Trên bến dưới thuyền”",
-      "Lễ hội hoa đăng",
-      "Chợ phiên vùng cao"
+      "Mãng cầu, dừa, đu đủ, xoài, sung",
+      "Thanh long, chuối, dưa hấu, cam",
+      "Chuối, bưởi, đào, hồng, quýt"
     ],
-    "selected": "Chợ phiên vùng cao"
+    "selected": "Mãng cầu, dừa, đu đủ, xoài, sung"
   },
   {
-    "question": "Đâu là trò chơi dân gian của vùng Đông Bắc dịp Tết?",
-    "answer": ["Ném pao", "Đánh đu", "Cả 2 phương án trên"],
-    "selected": "Cả 2 phương án trên"
+    "question": "Người miền Nam thường ăn canh khổ qua trong 3 ngày Tết với ý nghĩa gì?",
+    "answer": ["Sung túc đủ đầy", "Mùa màng tươi tốt", "Khổ đau mau qua"],
+    "selected": "Khổ đau mau qua"
   },
   {
-    "question": "Lễ hội Đền Hùng (Phú Thọ) diễn ra vào ngày nào?",
+    "question": "Loài hoa nào được người miền Nam chưng trong ngày Tết với ý nghĩa tiền bạc đầy nhà?",
+    "answer": ["Hoa trạng nguyên", "Hoa đồng tiền", "Hoa giấy"],
+    "selected": "Hoa đồng tiền"
+  },
+  {
+    "question": "Nghệ thuật trình diễn được lưu truyền hàng trăm năm ở Nam Bộ mỗi dịp Tết là gì?",
     "answer": [
-      "Mồng 10 tháng 3 âm lịch",
-      "12 tháng 3 âm lịch",
-      "15 tháng 3 âm lịch"
+      "Nhã nhạc cung đình Huế",
+      "Múa lân sư rồng Mai Hoa Thung",
+      "Dân ca quan họ"
     ],
-    "selected": "Mồng 10 tháng 3 âm lịch"
+    "selected": "Múa lân sư rồng Mai Hoa Thung"
   },
   {
-    "question": "Địa điểm du lịch tâm linh nổi tiếng tại Lạng Sơn là chùa nào?",
-    "answer": ["Chùa Hoa Nghiêm", "Chùa Tam Thanh", "Chùa Bái Đính"],
-    "selected": "Chùa Tam Thanh"
+    "question": "Đâu là phong tục đặc trưng ngày cận Tết của người dân đồng bằng sống Cửu Long?",
+    "answer": ["Tát ao bắt cá", "Thăm rừng hái lộc", "Dọn dẹp ghe, thuyền"],
+    "selected": "Tát ao bắt cá"
   },
   {
-    "question": "Đâu là lễ hội truyền thống của vùng Đông Bắc vào mùa Xuân?",
+    "question": "Trái dừa xuất hiện trong mâm ngũ quả miền Nam với ý nghĩa gì?",
     "answer": [
-      "Lễ hội chùa Hương",
-      "Lễ hội múa sư tử mèo",
-      "Lễ hội thả đèn trời"
+      "Vừa đủ, không thiếu",
+      "Đi đường thuận lợi",
+      "Tròn đầy viên mãn"
     ],
-    "selected": "Lễ hội múa sư tử mèo"
+    "selected": "Vừa đủ, không thiếu"
   },
   {
-    "question": "Đêm ốm dài, đêm Sli ngắn là câu tục ngữ nói về làn điệu nổi tiếng nào của người Nùng?",
-    "answer": ["Hát lượn", "Hát Sli", "Hát then"],
-    "selected": "Hát Sli"
+    "question": "Đâu là chợ Tết trên sông nổi tiếng của Cần Thơ?",
+    "answer": ["Cái Răng", "Ngã Năm", "Ngã Bảy"],
+    "selected": "Cái Răng"
   },
   {
-    "question": "Người Nùng (Lạng Sơn) dựng cây nêu vào ngày Tết với ý nghĩa gì?",
+    "question": "Người miền Nam ăn thịt kho tàu trong ngày Tết với ý nghĩa gì?",
+    "answer": ["Tình duyên gắn kết", "Tròn đầy viên mãn", "Sức khỏe tràn đầy"],
+    "selected": "Tròn đầy viên mãn"
+  },
+  {
+    "question": "Người miền Nam thường chọn cây cảnh như thế nào để chưng Tết?",
+    "answer": ["Cây có gốc lớn", "Cây nhiều nụ và lộc", "Cây nhiều cành"],
+    "selected": "Cây nhiều nụ và lộc"
+  },
+  {
+    "question": "Món ăn đặc trưng trong ngày Tết của người Tây Nam Bộ là gì?",
+    "answer": ["Cá lóc nướng trui", "Heo quay lá mắc mật", "Thịt ngâm mắm"],
+    "selected": "Cá lóc nướng trui"
+  },
+  {
+    "question": "Đâu là điều kiêng kỵ trong những ngày đầu năm của người miền Nam?",
     "answer": [
-      "Xua đuổi tà ma, mùa màng bội thu",
-      "Không tiếp khách ngày Tết",
-      "Thông báo gia đình có tiệc lớn"
+      "Chưng hoa cúc trong nhà",
+      "Thiếu muối, dầu, gạo",
+      "Thăm viếng người thân"
     ],
-    "selected": "Xua đuổi tà ma, mùa màng bội thu"
+    "selected": "Thiếu muối, dầu, gạo"
   },
   {
-    "question": "Đâu là giống hoa đào nổi tiếng tại Mẫu Sơn?",
-    "answer": ["Đào chuông", "Đào rừng", "Cả 2 phương án trên"],
-    "selected": "Cả 2 phương án trên"
+    "question": "Loại hình giải trí dân gian thường diễn ra ở các hội chợ Tết miền Tây là gì?",
+    "answer": ["Lô tô", "Hát Bội", "Điệu lý"],
+    "selected": "Lô tô"
   },
   {
-    "question": "Bánh láo khoải có màu vàng ươm đẹp mắt trong ngày Tết người Mông (Hà Giang) được làm từ nguyên liệu gì?",
-    "answer": ["Ngô", "Khoai", "Nếp"],
-    "selected": "Ngô"
-  },
-  {
-    "question": "Giống đào quý hiếm có hình chiếc chuông nổi tiếng tại vùng núi Mẫu Sơn có tên là gì?",
-    "answer": ["Đào Chuông", "Đào Phai", "Đào Nhật Tân"],
-    "selected": "Đào Chuông"
-  },
-  {
-    "question": "Đâu là loại bánh không thể thiếu trong mâm cỗ Tết của người Đông Bắc?",
-    "answer": ["Bánh chưng xanh", "Bánh chưng đen", "Bánh tét"],
-    "selected": "Bánh chưng đen"
-  },
-  {
-    "question": "Địa điểm ngắm hoa đào nổi tiếng tại Lạng Sơn mỗi dịp Xuân về là nơi nào?",
-    "answer": ["Núi Mẫu Sơn", "Núi Bạch Mã", "Núi Bà Đen"],
-    "selected": "Núi Mẫu Sơn"
-  },
-  {
-    "question": "Bánh ngải thường xuất hiện trên mâm cỗ Tết của người Đông Bắc được làm từ nguyên liệu nào?",
-    "answer": ["Lá bạc hà", "Lá mắc mật", "Lá ngải cứu"],
-    "selected": "Lá ngải cứu"
-  },
-  {
-    "question": "Bài hát xoan Xin huê, đố huê mang ý nghĩa nhân văn nào sau đây?",
+    "question": "Mâm cỗ ngày Tết của người miền Nam thường gồm những món ăn nào?",
     "answer": [
-      "Phán ánh đời sống tinh thần lao động phong phú",
-      "Phản ánh khát vọng hạnh phúc lứa đôi",
+      "Bánh chưng, gà luộc, thịt đông, chả ram, chè bưởi",
+      "Bánh tét, gà luộc, thịt kho tàu, canh khổ qua, củ kiệu",
+      "Bánh gai, chả giò, nem chua, thịt ngâm mắm"
+    ],
+    "selected": "Bánh tét, gà luộc, thịt kho tàu, canh khổ qua, củ kiệu"
+  },
+  {
+    "question": "Hoa mai thường có bao nhiêu cánh?",
+    "answer": ["3 cánh", "4 cánh", "5 cánh"],
+    "selected": "5 cánh"
+  },
+  {
+    "question": "5 cánh của hoa mai tượng trưng cho điều gì?",
+    "answer": [
+      "Ngũ hành (kim, mộc, thủy hỏa, thổ)",
+      "Ngũ phúc (phước, lộc, thọ, khang, ninh)",
       "Cả 2 phương án trên"
     ],
     "selected": "Cả 2 phương án trên"
   },
   {
-    "question": "Màu đen của bánh chưng đen đặc sản Đông Bắc có nguồn gốc từ đâu?",
-    "answer": ["Phẩm màu", "Tro của cây núc nác", "Hàng the"],
-    "selected": "Tro của cây núc nác"
-  },
-  {
-    "question": "Nhạc cụ được sử dụng trong diễn xướng Then ngày Xuân của người Tày, Nùng là gì?",
-    "answer": ["Đàn organ", "Đàn ghi-ta", "Đàn tính"],
-    "selected": "Đàn tính"
-  },
-  {
-    "question": "Loại bánh làm từ gạo nếp mang hương vị Tết của người Tày (Cao Bằng) là gì?",
-    "answer": ["Bánh chuối", "Bánh khảo", "Bánh bao"],
-    "selected": "Bánh khảo"
-  },
-  {
-    "question": "Vì sao người Nùng (Lạng Sơn) ăn thịt vịt vào ngày 30 Tết?",
+    "question": "Chợ hoa Tết xưa của người miền Tây thường điễn ra ở đâu?",
     "answer": [
-      "Để giải xui, tiễn đưa những điều không may mắn",
-      "Đón năm mới mạnh khỏe, bình an",
+      "Tuyến phố đi bộ nổi tiếng",
+      "Trên bến dưới thuyền",
+      "Vườn đào lâu năm"
+    ],
+    "selected": "Trên bến dưới thuyền"
+  },
+  {
+    "question": "Người miền Tây có phong tục nấu chè vào đêm giao thừa với ý nghĩa gì?",
+    "answer": ["Tiền bạc rủng rỉnh", "Phúc lộc vào nhà", "Gia đình sum họp"],
+    "selected": "Gia đình sum họp"
+  },
+  {
+    "question": "Ngày 30 Tết, người Nam Bộ làm mâm cơm cúng dâng lên bàn thờ để làm gì?",
+    "answer": [
+      "Xua đuổi những điều không may mắn",
+      "Rước ông bà về ăn Tết cùng con cháu",
+      "Cầu tổ tiên phù hộ năm mới an khang"
+    ],
+    "selected": "Rước ông bà về ăn Tết cùng con cháu"
+  },
+  {
+    "question": "Ngày mồng 3 Tết, người Nam Bộ sẽ làm mâm cúng dâng lên bàn thờ để làm gì?",
+    "answer": [
+      "Cảm ơn tổ tiên vì cái Tết no đủ",
+      "Thông báo gia đình đã ăn Tết xong",
+      "'Đưa tiễn ông bà' đi"
+    ],
+    "selected": "'Đưa tiễn ông bà' đi"
+  },
+  {
+    "question": "Bánh tét là món ăn không thể thiếu trong ngày Tết của người miền Nam với ý nghĩa gì?",
+    "answer": ["Gia đình sum vầy", "Mùa màng bội thu", "Cả 2 phương án trên"],
+    "selected": "Cả 2 phương án trên"
+  },
+  {
+    "question": "Tục múa lân ngày Tết của người Nam Bộ mang ý nghĩa nào sau đây?",
+    "answer": [
+      "Cầu mưa thuận gió hoà",
+      "Quốc thái dân an",
       "Cả 2 phương án trên"
     ],
     "selected": "Cả 2 phương án trên"
   },
   {
-    "question": "Đâu là di sản văn hoá phi vật thể của vùng Đông Bắc?",
-    "answer": ["Múa sư tử mèo", "Hát then", "Cả 2 phương án trên"],
+    "question": "Người miền Nam thường chưng những loài hoa nào trong ngày Tết?",
+    "answer": ["Hoa mai, hoa cúc", "Hoa đào, hoa ly", "Hoa mận, hoa huệ"],
+    "selected": "Hoa mai, hoa cúc"
+  },
+  {
+    "question": "Đâu là chợ Tết trên sông nổi tiếng của Sóc Trăng?",
+    "answer": ["Cái Răng", "Ngã Năm", "Ngã Bảy"],
+    "selected": "Ngã Năm"
+  },
+  {
+    "question": "Đâu là chợ Tết trên sông nổi tiếng của Hậu Giang?",
+    "answer": ["Cái Răng", "Ngã Năm", "Ngã Bảy"],
+    "selected": "Ngã Bảy"
+  },
+  {
+    "question": "Theo phong tục, người miền Nam sẽ lặt lá mai vào ngày nào?",
+    "answer": ["01 tháng Chạp", "10 tháng Chạp", "15 tháng Chạp"],
+    "selected": "15 tháng Chạp"
+  },
+  {
+    "question": "Vì sao người Nam Bộ chưng hoa cúc vạn thọ ngày Tết?",
+    "answer": [
+      "Cầu sức khỏe, trường thọ",
+      "Cầu đông con nhiều cháu",
+      "Cầu gia đình hòa thuận"
+    ],
+    "selected": "Cầu sức khỏe, trường thọ"
+  },
+  {
+    "question": "Người Nam Bộ đổ đầy nước trong lu, khạp ngày 30 Tết với ý nghĩa gì?",
+    "answer": ["Tiền vô như nước", "Con cái đầy nhà", "Buôn bán thuận lợi"],
+    "selected": "Tiền vô như nước"
+  },
+  {
+    "question": "Tết Tây Nam Bộ là sự giao thoa của 4 dân tộc nào?",
+    "answer": [
+      "Tày, Nùng, Dao, Mông",
+      "Kinh, Chăm, Hoa, Khmer",
+      "Kinh, Khmer, Thái, Mèo"
+    ],
+    "selected": "Kinh, Chăm, Hoa, Khmer"
+  },
+  {
+    "question": "Đối với người miền Nam hoa càng nhiều cánh thì năm mới sẽ như thế nào?",
+    "answer": [
+      "Càng tất bật lo lắng",
+      "Càng đông con nhiều cháu",
+      "Càng gặp nhiều may mắn"
+    ],
+    "selected": "Càng gặp nhiều may mắn"
+  },
+  {
+    "question": "Loại mứt Tết gắn liền với người miền Nam là gì?",
+    "answer": ["Mứt quất", "Mứt nho", "Mứt dừa"],
+    "selected": "Mứt dừa"
+  },
+  {
+    "question": "Tại sao người miền Nam kiêng chưng cam trên mâm ngũ quả?",
+    "answer": ["Mang ý nghĩa cam chịu", "Màu sắc không đẹp", "Mau hỏng"],
+    "selected": "Mang ý nghĩa cam chịu"
+  },
+  {
+    "question": "Đâu là loại hình văn hoá nghệ thuật không thể thiếu trong lễ hội Tết của người Nam Bộ?",
+    "answer": ["Đờn ca tài tử", "Dân ca quan họ", "Hát Then"],
+    "selected": "Đờn ca tài tử"
+  },
+  {
+    "question": "4 loại đàn truyền thống được sử dụng trong đờn ca tài tử của người Nam Bộ gồm những gì?",
+    "answer": [
+      "Đàn piano, đàn violon, đàn ghita",
+      "Đàn kìm, đàn cò, đàn tranh và đàn bầu",
+      "Đàn ghita, đàn cò, đàn nhị, đàn tranh"
+    ],
+    "selected": "Đàn kìm, đàn cò, đàn tranh và đàn bầu"
+  },
+  {
+    "question": "Trong các bài hát sau, đâu là bài đờn ca tài tử nổi tiếng?",
+    "answer": ["Dạ cổ hoài lang", "Lý con sáo", "Cả 2 phương án trên"],
     "selected": "Cả 2 phương án trên"
   },
   {
-    "question": "4 cây tỏi tươi trên bàn thờ người Dao (Lạng Sơn) tượng trưng cho điều gì?",
-    "answer": ["4 mùa trong năm", "4 người gác cổng", "4 lời cầu khẩn"],
-    "selected": "4 mùa trong năm"
+    "question": "Đâu là bài dân ca Nam Bộ được yêu thích trong những ngày Tết?",
+    "answer": ["Vui Tết miệt vườn", "Xuân Tây Bắc", "Dân ca Xứ Nghệ"],
+    "selected": "Vui Tết miệt vườn"
   },
   {
-    "question": "Loài hoa nở rực các cung đường Đông Bắc báo hiệu Xuân về?",
-    "answer": ["Hoa đào", "Hoa mận", "Cả 2 phương án trên"],
+    "question": "Đờn ca tài tử của người Nam Bộ xuất hiện từ thời điểm nào?",
+    "answer": ["Thế kỷ XIX", "Thế kỷ XX", "Thế kỷ XXI"],
+    "selected": "Thế kỷ XIX"
+  },
+  {
+    "question": "Đâu là những nghệ thuật trình diễn đặc trưng trong lễ hội Xuân của người Nam Bộ?",
+    "answer": ["Múa lân", "Đờn ca tài cử", "Cả 2 phương án trên"],
     "selected": "Cả 2 phương án trên"
   },
   {
-    "question": "Người H'Mông kiêng kị điều gì trong ngày Tết?",
-    "answer": [
-      "Chỉ mở cửa, không tiếp khách",
-      "Chỉ gặp gỡ, không trò chuyện",
-      "Chỉ đốt lửa, không thổi lửa"
-    ],
-    "selected": "Chỉ đốt lửa, không thổi lửa"
+    "question": "Lô tô phổ biến ở miền Tây từ thời điểm nào?",
+    "answer": ["Thế kỷ XVII", "Thế kỷ XIX", "Thế kỷ XX"],
+    "selected": "Thế kỷ XX"
   },
   {
-    "question": "Hoa mận - Loài hoa đặc trưng của vùng núi Đông Bắc, thường nở rộ vào dịp nào?",
-    "answer": [
-      "Tháng 10 - Tháng 12",
-      "Tháng 12  - Tháng 2 năm sau",
-      "Tháng 6 - Tháng 8"
-    ],
-    "selected": "Tháng 12  - Tháng 2 năm sau"
+    "question": "Tại sao người miền Nam kiêng chưng quả lê trên mâm ngũ quả?",
+    "answer": ["Không hợp khẩu vị", "Mang ý nghĩa không tốt", "Dễ hư hỏng"],
+    "selected": "Mang ý nghĩa không tốt"
   },
   {
-    "question": "Lễ hội Lồng Tồng (xuống đồng) của người Tày (Cao Bằng) vào mồng 1 Tết có ý nghĩa gì?",
-    "answer": ["Gia đình hòa thuận", "Mùa màng bội thu", "Buôn may bán đắt"],
-    "selected": "Mùa màng bội thu"
-  },
-  {
-    "question": "Đàn tính được sử dụng trong nghệ thuật hát then được làm từ vật liệu gì?",
-    "answer": ["Trái cau", "Trái bầu", "Trái dừa"],
-    "selected": "Trái bầu"
-  },
-  {
-    "question": "Người Mường (Phú Thọ) mở hội ném còn vào thời gian nào?",
-    "answer": [
-      "27 - 30 Tháng Chạp",
-      "Mồng 1 - Mồng 3  Tháng Giêng",
-      "Mồng 4 - Mồng 7 Tháng Giêng"
-    ],
-    "selected": "Mồng 4 - Mồng 7 Tháng Giêng"
-  },
-  {
-    "question": "Đâu là điệu hát đặc trưng của người dân Đông Bắc?",
-    "answer": ["Dân ca quan họ", "Hát Then", "Đờn ca tài tử"],
-    "selected": "Hát Then"
-  },
-  {
-    "question": "Điệu hát then của vùng Đông Bắc là điệu hát đặc trưng của dân tộc nào?",
-    "answer": ["Khmer, Kinh, Dao", "Kinh, Mông, Khmer", "Tày, Nùng, Thái"],
-    "selected": "Tày, Nùng, Thái"
-  },
-  {
-    "question": "Điệu hát giao duyên mỗi mùa Xuân về của người Tày có tên là gì?",
-    "answer": ["Hát lượn", "Dân ca quan họ", "Đờn ca tài tử"],
-    "selected": "Hát lượn"
-  },
-  {
-    "question": "Lễ hội cướp đầu pháo của vùng Đông Bắc mang ý nghĩa gì?",
-    "answer": [
-      "Cầu may mắn, tài lộc",
-      "Cầu tình duyên thuận lợi",
-      "Cầu học hành tấn tới"
-    ],
-    "selected": "Cầu may mắn, tài lộc"
-  },
-  {
-    "question": "Hát Sli là điệu hát ứng đối của dân tộc nào sau đây?",
-    "answer": ["Kinh", "Nùng", "Khmer"],
-    "selected": "Nùng"
-  },
-  {
-    "question": "Phong tục gánh nước bạc, nước vàng của người Pu Péo (Hà Giang) mang ý nghĩa gì?",
-    "answer": [
-      "Cầu tai qua nạn khỏi",
-      "Cầu mùa màng bội thu",
-      "Xua đuổi tà ma"
-    ],
-    "selected": "Cầu mùa màng bội thu"
-  },
-  {
-    "question": "Theo tục lệ, vào ngày 26 hàng năm, người Mông sẽ chặt cây gì cắm trước cửa nhà?",
-    "answer": ["Cây mai to (một loại tre)", "Cây hồi", "Cây dâu rừng"],
-    "selected": "Cây mai to (một loại tre)"
-  },
-  {
-    "question": "Loại rượu thường được sử dụng trong các dịp lễ Tết của người H'Mông là gì?",
-    "answer": ["Rượu ngô", "Rượu nếp", "Rượu vang"],
-    "selected": "Rượu ngô"
-  },
-  {
-    "question": "Mâm cỗ Tết của người Tày (Cao Bằng) gồm những món ăn nào?",
-    "answer": [
-      "Bánh bèo, giò chả, nem rán, thịt đông",
-      "Bánh tét, thịt kho hột vịt, chè trôi nước, xôi",
-      "Bánh chưng, gà luộc, chè lam, bánh khảo"
-    ],
-    "selected": "Bánh chưng, gà luộc, chè lam, bánh khảo"
-  },
-  {
-    "question": "Vào ngày mồng 1 người Tày (Lạng Sơn) làm gì để thanh tẩy những điều ô uế?",
-    "answer": [
-      "Đặt cành lá đào trong bát nước dâng lên bàn thờ",
-      "Tổ chức tiệc rượu linh đình",
-      "Đóng cửa không tiếp khách"
-    ],
-    "selected": "Đặt cành lá đào trong bát nước dâng lên bàn thờ"
-  },
-  {
-    "question": "Đâu là giai điệu dân ca nổi tiếng xuất phát từ Phú Thọ?",
-    "answer": ["Hát xoan", "Hát sli", "Hát then"],
-    "selected": "Hát xoan"
-  },
-  {
-    "question": "Lạng Sơn có bao nhiêu lễ hội Xuân được công nhận là di sản văn hóa phi vật thể?",
-    "answer": ["8 lễ hội", "10 lễ hội", "12 lễ hội"],
-    "selected": "8 lễ hội"
-  },
-  {
-    "question": "Mâm cúng Tết của người Nùng (Lạng Sơn) gồm những món ăn nào?",
-    "answer": [
-      "Thịt vịt, bánh gai, bánh rợm, bún, hoa quả",
-      "Thịt gà, bánh dày, xôi, hoa quả",
-      "Thịt gà, bánh tét, xôi, chè"
-    ],
-    "selected": "Thịt vịt, bánh gai, bánh rợm, bún, hoa quả"
+    "question": "Đầu năm, người miền Nam kiêng xuất hành vào ngày nào?",
+    "answer": ["Mồng 1", "Mồng 3", "Mồng 5"],
+    "selected": "Mồng 5"
   }
 ]

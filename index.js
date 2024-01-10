@@ -8,17 +8,29 @@ const questions = require("./output.json");
 const app = express();
 const port = 3300;
 
-mongoose.connect("mongodb://localhost:27017/hanoixuan");
+mongoose.connect("mongodb://localhost:27017/hanoixuan").then(async () => {});
 
 const serviceAccount = require("./hanoixuan-446a9-firebase-adminsdk-dv9hc-9a8b65d39e.json");
 const Question = require("./models/questionModel");
-// for (var x of questions) {
-//   Question.create({
-//     answer: x.answer,
-//     question: x.question,
-//     category: "hathanh_vanhien",
-//     correctAnswer: x.selected,
-//   });
+// for (var x in questions) {
+//   const data = questions[x];
+//   if (x >= 20) {
+//     Question.create({
+//       answer: data.answer,
+//       question: data.question,
+//       category: "trenben_duoithuyen",
+//       correctAnswer: data.selected,
+//       type: "hard",
+//     });
+//   } else {
+//     Question.create({
+//       answer: data.answer,
+//       question: data.question,
+//       category: "trenben_duoithuyen",
+//       correctAnswer: data.selected,
+//       type: "easy",
+//     });
+//   }
 // }
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

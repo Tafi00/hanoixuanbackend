@@ -70,6 +70,8 @@ router.get("/getProfile", verifyToken, async (req, res) => {
         uid: user.uid,
         score: user.hathanh_score,
         playCount: user.playCount,
+        isShare: user.isShare,
+        isLike: user.isLike,
       });
     }
   } catch (error) {

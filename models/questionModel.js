@@ -10,6 +10,10 @@ const questionSchema = new mongoose.Schema({
     type: Array,
     require: true,
   },
+  type: {
+    type: String,
+    require: true,
+  },
   correctAnswer: String,
   category: {
     type: String,

@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "6593e56cd16557c5329b0ee9"
+  },
+  "name": "Tài Nguyễn",
+  "phone": "0898914407",
+  "uid": "33LuvzyMkCfhPkZBfcDJey9Cd222",
+  "hathanh_score": 150,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 12,
+  "isShare": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6593e7afac9521a31a246848"
+  },
+  "name": "Banj Tai`",
+  "phone": "0852829291",
+  "uid": "RubK66uyzHRWTw9AqT0GRK0yZRH3",
+  "hathanh_score": 130,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 2,
+  "isShare": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6594cd00f5528403e5516e17"
+  },
+  "name": "Ly Chan Kiet",
+  "phone": "0932157102",
+  "uid": "esvzDgqgTwUWOPbJXAVHHjBELCw2",
+  "hathanh_score": 90,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 1,
+  "isShare": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6594ce35f5528403e5517059"
+  },
+  "name": "di",
+  "phone": "0384964899",
+  "uid": "lMUj0lDpY5ar5OkMmzMCYWOGDVH3",
+  "hathanh_score": 90,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 0,
+  "isShare": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6594cebef5528403e55172bf"
+  },
+  "name": "FUBA",
+  "phone": "0982164296",
+  "uid": "K7hN2CFMy7VkckzTEj2wJ126BOo2",
+  "hathanh_score": 90,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 0,
+  "isShare": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659501b3f5528403e5517bec"
+  },
+  "name": "Bella",
+  "phone": "0922501813",
+  "uid": "PfcHB9sXwbbncUQPxe70CClTlng1",
+  "hathanh_score": 120,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 1,
+  "isShare": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6595260ef5528403e5518700"
+  },
+  "name": "Hứa Hiền Phương",
+  "phone": "0909325757",
+  "uid": "MW62zlOTyufxEXkS0bN7ODBxR4G2",
+  "hathanh_score": 80,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 9,
+  "isShare": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65952c35f5528403e5518cd2"
+  },
+  "name": "thuynguyen1820@gmail.com",
+  "phone": "0907396722",
+  "uid": "tpW8TJ7eVobmjarwN411WD96vr53",
+  "hathanh_score": 0,
+  "trenben_score": 0,
+  "sacdao_score": 0,
+  "playCount": 2,
+  "isShare": false,
+  "__v": 0
+}]

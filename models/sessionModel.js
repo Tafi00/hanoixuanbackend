@@ -14,6 +14,10 @@ const sessionSchema = new mongoose.Schema({
       isCorrect: Boolean,
     },
   ],
+  category: {
+    type: String,
+    require: true,
+  },
   score: {
     type: Number,
     default: 0,

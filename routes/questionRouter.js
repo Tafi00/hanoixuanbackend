@@ -40,16 +40,22 @@ router.get("/startSession", verifyToken, async (req, res) => {
         .json({ sessionId: activeSession._id, questions: sortedQuestions });
     }
     if (currentUser.playCount <= 0) {
-      res.status(400).json({ message: "Bạn đã hết lượt chơi" });
+      return res.status(400).json({ message: "Bạn đã hết lượt chơi" });
     }
     await decreasePlayCount(req);
 
-    // Nếu không có phiên đang hoạt động, tạo phiên mới
-    const questions = await Question.aggregate([
-      { $match: { category: "hathanh_vanhien" } },
-      { $sample: { size: 20 } },
+    const easyQuestions = await Question.aggregate([
+      { $match: { category: req.query.category, type: "easy" } },
+      { $sample: { size: 10 } },
       { $unset: "correctAnswer" },
     ]);
+    const hardQuestions = await Question.aggregate([
+      { $match: { category: req.query.category, type: "hard" } },
+      { $sample: { size: 10 } },
+      { $unset: "correctAnswer" },
+    ]);
+
+    const questions = [...easyQuestions, ...hardQuestions];
     const session = await Session.create({
       uid: req.user.uid,
       questionsAnswered: questions.map((question) => ({
@@ -57,6 +63,7 @@ router.get("/startSession", verifyToken, async (req, res) => {
         userAnswer: null,
         isCorrect: null,
       })),
+      category: req.query.category,
       score: 0,
     });
 
@@ -92,7 +99,7 @@ router.post("/answer/:sessionId", verifyToken, async (req, res) => {
         .status(400)
         .json({ message: "Question already answered in this session" });
     }
-    if (elapsedTime >= 60) {
+    if (elapsedTime >= 120) {
       return res.status(400).json({ message: "Session time exceeded" });
     }
 
@@ -149,9 +156,11 @@ router.get("/get-result", verifyToken, async (req, res) => {
       if (session.endTime == null || isEnd == "true") {
         await session.updateOne({ $set: { endTime: Date.now() } });
       }
-      if (currentScore.hathanh_score < session.score) {
+      if (
+        currentScore[`${session.category.split("_")[0]}_score`] < session.score
+      ) {
         await currentScore.updateOne({
-          $set: { hathanh_score: session.score },
+          $set: { [`${session.category.split("_")[0]}_score`]: session.score },
         });
       }
       if (isEnd) {
@@ -238,7 +247,7 @@ router.get("/shareMission", verifyToken, async (req, res) => {
 });
 router.get("/likeMission", verifyToken, async (req, res) => {
   const currentUser = await User.findOne({ uid: req.user.uid });
-  if (!currentUser.isShare) {
+  if (!currentUser.isLike) {
     await currentUser.updateOne({ $inc: { playCount: 1 } });
     await currentUser.updateOne({ isLike: true });
     return res.status(200).json({
