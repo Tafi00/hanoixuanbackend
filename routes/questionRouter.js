@@ -152,7 +152,7 @@ router.get("/get-result", verifyToken, async (req, res) => {
 
     const currentScore = await User.findOne({ uid: req.user.uid });
 
-    if (elapsedTime >= 60 || isEnd == "true") {
+    if (elapsedTime >= 120 || isEnd == "true") {
       if (session.endTime == null || isEnd == "true") {
         await session.updateOne({ $set: { endTime: Date.now() } });
       }
@@ -207,15 +207,19 @@ router.get("/get-:id-rank", async (req, res) => {
         ? "-phone -trenben_score -hathanh_score -playCount -isShare -v"
         : "-phone -sacdao_score -hathanh_score -playCount -isShare -v";
     let sortField;
+    let fullName;
     switch (req.params.id) {
       case "hathanh":
         sortField = "hathanh_score";
+        fullName = "hathanh_vanhien";
         break;
       case "sacdao":
         sortField = "sacdao_score";
+        fullName = "sacdao_dongbac";
         break;
       default:
         sortField = "trenben_score";
+        fullName = "trenben_duoithuyen";
         break;
     }
 
@@ -223,6 +227,50 @@ router.get("/get-:id-rank", async (req, res) => {
       .sort({ [sortField]: -1 }) // sắp xếp giảm dần theo trường điểm được chọn
       .limit(10); // giới hạn số lượng người dùng trả về là 10
     const cloneArr = JSON.parse(JSON.stringify(topUsers));
+    // Điều chỉnh để thêm trường thời gian hoàn thành
+    for (let user of cloneArr) {
+      const sessions = await Session.find({
+        uid: user.uid,
+        category: fullName,
+        score: user[sortField],
+      });
+      let minDuration = Infinity;
+      let session = null;
+      sessions.forEach((s) => {
+        const duration = s.endTime.getTime() - s.startTime.getTime();
+        if (duration < minDuration) {
+          minDuration = duration;
+          session = s;
+        }
+      });
+      if (session) {
+        const startTime = new Date(session.startTime);
+        const endTime = new Date(session.endTime);
+        user.time = (endTime - startTime) / 1000; // tính thời gian hoàn thành trong giây
+      } else {
+        user.time = 0;
+      }
+    }
+
+    // Sắp xếp lại mảng topUsers dựa trên thời gian hoàn thành (nếu cần)
+    cloneArr.sort((a, b) => {
+      if (a[sortField] !== b[sortField]) {
+        // Sắp xếp giảm dần theo điểm số nếu điểm số khác nhau
+        return b[sortField] - a[sortField];
+      } else {
+        // Nếu điểm số bằng nhau, sắp xếp tăng dần theo thời gian hoàn thành
+        if (a.time && b.time) {
+          return a.time - b.time;
+        } else if (!a.time && b.time) {
+          return 1; // đẩy a lên trên
+        } else if (a.time && !b.time) {
+          return -1; // đẩy b lên trên
+        } else {
+          return 0; // giữ nguyên vị trí nếu cả hai đều không có thời gian
+        }
+      }
+    });
+
     cloneArr.forEach((obj) => {
       obj.score = obj[sortField]; // Cập nhật trường score dựa trên trường điểm được chọn
     });
