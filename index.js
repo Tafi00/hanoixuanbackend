@@ -3,11 +3,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const admin = require("firebase-admin");
 const userRoutes = require("./routes/userRouter");
+const frameRoutes = require("./routes/frameRouter");
 const questionRoutes = require("./routes/questionRouter");
 const questions = require("./output.json");
 const app = express();
 const port = 3300;
-
+var bodyParser = require("body-parser");
 mongoose.connect("mongodb://localhost:27017/hanoixuan").then(async () => {});
 
 const serviceAccount = require("./hanoixuan-446a9-firebase-adminsdk-dv9hc-9a8b65d39e.json");
@@ -37,9 +38,17 @@ admin.initializeApp({
 });
 app.use(cors());
 app.use(express.json());
-
+app.use(bodyParser.json({ limit: "80mb" }));
+app.use(
+  bodyParser.urlencoded({
+    limit: "80mb",
+    extended: true,
+    parameterLimit: 50000,
+  })
+);
 app.use("/user", userRoutes);
 app.use("/question", questionRoutes);
+app.use("/frame", frameRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
