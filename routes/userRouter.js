@@ -58,9 +58,9 @@ router.post("/register", (req, res) => {
 
 router.get("/getProfile", verifyToken, async (req, res) => {
   const uid = req.user.uid;
-
+  console.log(uid);
   try {
-    const user = await User.findOne({ uid: uid });
+    const user = await User.findById(uid);
     if (!user) {
       return res.status(404).json({ error: "User not found" });
     } else {
@@ -68,7 +68,7 @@ router.get("/getProfile", verifyToken, async (req, res) => {
         name: user.name,
         phone: user.phone,
         uid: user.uid,
-        score: user.hathanh_score,
+        score: user.trenben_score,
         playCount: user.playCount,
         isShare: user.isShare,
         isLike: user.isLike,

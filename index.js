@@ -3,11 +3,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const admin = require("firebase-admin");
 const userRoutes = require("./routes/userRouter");
+const otpRoutes = require("./routes/otpRouter");
 const frameRoutes = require("./routes/frameRouter");
 const questionRoutes = require("./routes/questionRouter");
 const questions = require("./output.json");
 const app = express();
 const port = 3300;
+require("dotenv").config();
+
 var bodyParser = require("body-parser");
 mongoose.connect("mongodb://localhost:27017/hanoixuan").then(async () => {});
 
@@ -38,18 +41,18 @@ admin.initializeApp({
 });
 app.use(cors());
 app.use(express.json());
-app.use(bodyParser.json({ limit: "80mb" }));
+app.use(bodyParser.json({ limit: "100mb" }));
 app.use(
   bodyParser.urlencoded({
-    limit: "80mb",
+    limit: "100mb",
     extended: true,
-    parameterLimit: 50000,
+    parameterLimit: 100000,
   })
 );
 app.use("/user", userRoutes);
 app.use("/question", questionRoutes);
 app.use("/frame", frameRoutes);
-
+app.use("/auth", otpRoutes);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

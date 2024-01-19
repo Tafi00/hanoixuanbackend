@@ -4,7 +4,6 @@ const cron = require("node-cron");
 const userSchema = new mongoose.Schema({
   name: String,
   phone: String,
-  uid: String,
   hathanh_score: {
     type: Number,
     default: 0,

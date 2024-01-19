@@ -6,7 +6,7 @@ const User = require("../models/userModel");
 const router = express.Router();
 async function decreasePlayCount(req) {
   try {
-    await User.updateOne({ uid: req.user.uid }, { $inc: { playCount: -1 } });
+    await User.findByIdAndUpdate(req.user.uid, { $inc: { playCount: -1 } });
   } catch (error) {
     console.error("Error updating playCount:", error);
   }
@@ -18,7 +18,7 @@ router.get("/startSession", verifyToken, async (req, res) => {
       uid: req.user.uid,
       endTime: null, // Phiên chưa kết thúc sẽ không có endTime
     }).sort({ startTime: -1 }); // Lấy phiên mới nhất
-    const currentUser = await User.findOne({ uid: req.user.uid });
+    const currentUser = await User.findById(req.user.uid);
     if (activeSession) {
       // Trả về thông tin của phiên đang hoạt động
       const answeredQuestionIds = activeSession.questionsAnswered.map(
@@ -150,7 +150,7 @@ router.get("/get-result", verifyToken, async (req, res) => {
     const elapsedTime = (currentTime - startTime) / 1000; // Đổi sang giây
     const isEnd = req.query.isEnd;
 
-    const currentScore = await User.findOne({ uid: req.user.uid });
+    const currentScore = await User.findById(req.user.uid);
 
     if (elapsedTime >= 120 || isEnd == "true") {
       if (session.endTime == null || isEnd == "true") {
@@ -230,9 +230,10 @@ router.get("/get-:id-rank", async (req, res) => {
     // Điều chỉnh để thêm trường thời gian hoàn thành
     for (let user of cloneArr) {
       const sessions = await Session.find({
-        uid: user.uid,
+        uid: user._id,
         category: fullName,
         score: user[sortField],
+        endTime: { $ne: null },
       });
       let minDuration = Infinity;
       let session = null;
@@ -281,7 +282,7 @@ router.get("/get-:id-rank", async (req, res) => {
   }
 });
 router.get("/shareMission", verifyToken, async (req, res) => {
-  const currentUser = await User.findOne({ uid: req.user.uid });
+  const currentUser = await User.findById(req.user.uid);
   if (!currentUser.isShare) {
     await currentUser.updateOne({ $inc: { playCount: 1 } });
     await currentUser.updateOne({ isShare: true });
@@ -294,7 +295,7 @@ router.get("/shareMission", verifyToken, async (req, res) => {
   });
 });
 router.get("/likeMission", verifyToken, async (req, res) => {
-  const currentUser = await User.findOne({ uid: req.user.uid });
+  const currentUser = await User.findById(req.user.uid);
   if (!currentUser.isLike) {
     await currentUser.updateOne({ $inc: { playCount: 1 } });
     await currentUser.updateOne({ isLike: true });

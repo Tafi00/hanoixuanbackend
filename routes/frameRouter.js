@@ -28,7 +28,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 10000000 /* bytes */ },
+  limits: { fileSize: 100000000 /* bytes */ },
 });
 // API để tạo mới một Frame và lưu hình ảnh
 router.post("/create", async (req, res) => {
@@ -68,12 +68,7 @@ router.get("/getImage/:id", async (req, res) => {
       return res.status(404).json({ error: "Frame not found" });
     }
 
-    const imagePath = path.join(
-      __dirname,
-      "..",
-      "uploads",
-      `${req.params.id}.png`
-    );
+    const imagePath = path.join(__dirname, "..", "uploads", `${req.params.id}`);
 
     // Trả về đường dẫn của hình ảnh
     res.sendFile(imagePath);
